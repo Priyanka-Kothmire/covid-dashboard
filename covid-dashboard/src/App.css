@@ -1,0 +1,152 @@
+.App {
+  font-family: 'Arial', sans-serif;
+  padding: 2rem;
+  background-color: #f5f7fb;
+  min-height: 100vh
+  
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  /* margin-bottom: 2rem; */
+  color: #222;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stats-cards {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem auto;
+  background-color: #e5edfb;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+}
+
+.stat-label {
+  font-weight: bold;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat-value {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.stat-percentage {
+  font-size: 0.75rem;
+  color: #666;
+  margin-top: 0.2rem;
+}
+
+.stat-card.cases {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.stat-card.recovered {
+  background-color: #22c55e;
+  color: white;
+}
+
+.stat-card.deaths {
+  background-color: #ef4444;
+  color: white;
+}
+
+.charts {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  height: 250px;
+  width: 500px;
+  margin: auto;
+}
+
+.line-chart,
+.pie-chart {
+  flex: 1;
+  min-width: 300px;
+  background: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.date-range-picker {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.date-range-picker label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+
+.stats-cards-new {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.pill-card {
+  display: flex;
+  border-radius: 9999px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  align-items: center;
+  background-color: #e0edff;
+}
+
+.pill-left {
+  padding: 0.5rem 1rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.pill-label {
+  margin-bottom: 0.2rem;
+}
+
+.pill-percentage {
+  font-size: 0.7rem;
+  font-weight: normal;
+  opacity: 0.9;
+}
+
+.pill-right {
+  background-color: white;
+  padding: 0.75rem 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #111;
+}
+
